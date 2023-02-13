@@ -18,7 +18,7 @@ export default function Statistics({ title, stats }) {
           return (
             <StatisticsItem key={id}>
               <StatisticsLabel>{label}</StatisticsLabel>
-              <StatisticsPercentage>{percentage}</StatisticsPercentage>
+              <StatisticsPercentage>{percentage}%</StatisticsPercentage>
             </StatisticsItem>
           );
         })}
