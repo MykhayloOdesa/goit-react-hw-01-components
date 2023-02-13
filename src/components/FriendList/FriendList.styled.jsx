@@ -4,7 +4,7 @@ export const Friends = styled.ul`
   display: flex;
   flex-direction: column;
   margin: 50px auto;
-  padding: 0;
+  padding: 5px;
   width: 400px;
   gap: 10px;
 

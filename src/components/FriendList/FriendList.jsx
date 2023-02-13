@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import FriendListItem from '../FriendListItem/FriendListItem';
 import { Friends } from './FriendList.styled';
 
-export default function FriendList(friends) {
+export default function FriendList({ friends }) {
   return (
     <Friends>
-      <FriendListItem {...friends} />
+      <FriendListItem friends={friends} />
     </Friends>
   );
 }

@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const UserProfile = styled.div`
   width: 300px;
   margin: 50px auto;
+  padding: 5px;
 
   display: flex;
   flex-direction: column;
