@@ -5,7 +5,9 @@ import { Friends } from './FriendList.styled';
 export default function FriendList({ friends }) {
   return (
     <Friends>
-      <FriendListItem friends={friends} />
+      {friends.map(friend => {
+        return <FriendListItem friend={friend} />;
+      })}
     </Friends>
   );
 }
