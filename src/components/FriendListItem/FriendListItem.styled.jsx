@@ -11,9 +11,6 @@ export const FriendStatus = styled.span`
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: ${({ typeName }) => {
-    return typeName ? 'green' : 'red';
-  }};
 `;
 
 export const FriendAvatar = styled.img`

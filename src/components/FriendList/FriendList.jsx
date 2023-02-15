@@ -6,7 +6,8 @@ export default function FriendList({ friends }) {
   return (
     <Friends>
       {friends.map(friend => {
-        return <FriendListItem friend={friend} />;
+        const { id } = friend;
+        return <FriendListItem key={id} friend={friend} />;
       })}
     </Friends>
   );
@@ -16,9 +17,6 @@ FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      avatar: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      isOnline: PropTypes.bool.isRequired,
     })
   ).isRequired,
 };
