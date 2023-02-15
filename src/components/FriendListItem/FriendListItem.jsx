@@ -15,9 +15,7 @@ export default function FriendListItem({
         style={{
           backgroundColor: isOnline ? 'green' : 'red',
         }}
-      >
-        {isOnline}
-      </FriendStatus>
+      />
       <FriendAvatar src={avatar} alt="User avatar" width="50" />
       <FriendName>{name}</FriendName>
     </Friend>
